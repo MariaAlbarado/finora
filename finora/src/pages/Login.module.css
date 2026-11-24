@@ -1,6 +1,6 @@
 .pagina {
   min-height: 100vh;
-  background: #f5f2f9;
+  background: linear-gradient(135deg, #e3d1fa, #f9f6fd);
   display: flex;
   justify-content: center;
   align-items: center;
