@@ -1,16 +1,12 @@
 import styles from "./Login.module.css";
-
 import { FiMail, FiLock, FiEye } from "react-icons/fi";
 import { FaChartSimple } from "react-icons/fa6";
-
 import financas from "../assets/financas.png";
 
 function Login() {
   return (
     <main className={styles.pagina}>
       <div className={styles.container}>
-        {/* Lado esquerdo */}
-
         <section className={styles.ladoEsquerdo}>
           <div className={styles.formaSuperior}></div>
           <div className={styles.formaInferior}></div>
@@ -28,8 +24,6 @@ function Login() {
           </div>
         </section>
 
-        {/* Lado direito */}
-
         <section className={styles.ladoDireito}>
           <div className={styles.conteudoDireito}>
             <div className={styles.areaLogo}>
@@ -38,14 +32,12 @@ function Login() {
               </div>
 
               <div>
-                <h2>Finora</h2>
+                <h2>AlbarFin</h2>
                 <p>Controle Financeiro</p>
               </div>
             </div>
 
             <h2 className={styles.titulo}>Entrar na sua conta</h2>
-
-            {/* Formulário */}
 
             <form className={styles.formulario}>
               <div className={styles.grupoCampo}>
@@ -86,8 +78,6 @@ function Login() {
                 Entrar
               </button>
             </form>
-
-            {/* Criar conta */}
 
             <div className={styles.divisor}>
               <span></span>
