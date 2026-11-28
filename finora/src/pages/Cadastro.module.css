@@ -1,5 +1,77 @@
 .containerPrincipal {
   width: 90%;
+  min-height: 550px;
   max-width: 1100px;
   margin: 40px auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+}
+
+.ladoEsquerdo {
+  width: 50%;
+  background-color: #eae2f9;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.ladoEsquerdo h1 {
+  font-size: 32px;
+  color: #20152e;
+  font-weight: 700;
+}
+
+.ladoEsquerdo p {
+  font-size: 16px;
+  color: #555555;
+  margin-top: 15px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagem {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 30px;
+}
+
+.ladoDireito {
+  width: 50%;
+  background-color: #ffffff;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.iconeLogo {
+  width: 28px;
+  height: 28px;
+  color: #ffffff;
+  background-color: #6935a8;
+  padding: 14px;
+  border-radius: 15px;
+  box-sizing: content-box;
+}
+
+.logo h2 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #20152e;
+}
+
+.logo p {
+  font-size: 14px;
+  color: #555555;
 }
