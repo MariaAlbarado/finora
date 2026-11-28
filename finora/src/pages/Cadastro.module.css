@@ -92,6 +92,12 @@
   font-weight: 700;
 }
 
+.aviso {
+  font-size: 13px;
+  color: #777777;
+  margin-top: 8px;
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -138,6 +144,10 @@
   font-size: 14px;
   font-weight: 600;
   color: #20152e;
+}
+
+.campo label span {
+  color: #dc2626;
 }
 
 .inputContainer {

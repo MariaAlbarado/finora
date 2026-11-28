@@ -35,12 +35,16 @@ function Cadastro() {
 
           <h1>Crie sua conta</h1>
 
+          <p className={styles.aviso}>Todos os campos são obrigatórios.</p>
+
           <form
             className={styles.formulario}
             onSubmit={(event) => event.preventDefault()}
           >
             <div className={styles.campo}>
-              <label htmlFor="nome">Nome completo</label>
+              <label htmlFor="nome">
+                Nome completo <span>*</span>
+              </label>
 
               <div className={styles.inputContainer}>
                 <FiUser className={styles.iconeInput} />
@@ -56,7 +60,9 @@ function Cadastro() {
             </div>
 
             <div className={styles.campo}>
-              <label htmlFor="email">E-mail</label>
+              <label htmlFor="email">
+                E-mail <span>*</span>
+              </label>
 
               <div className={styles.inputContainer}>
                 <FiMail className={styles.iconeInput} />
@@ -72,7 +78,9 @@ function Cadastro() {
             </div>
 
             <div className={styles.campo}>
-              <label htmlFor="senha">Senha</label>
+              <label htmlFor="senha">
+                Senha <span>*</span>
+              </label>
 
               <div className={styles.inputContainer}>
                 <FiLock className={styles.iconeInput} />
@@ -88,7 +96,9 @@ function Cadastro() {
             </div>
 
             <div className={styles.campo}>
-              <label htmlFor="confirmarSenha">Confirmar senha</label>
+              <label htmlFor="confirmarSenha">
+                Confirmar senha <span>*</span>
+              </label>
 
               <div className={styles.inputContainer}>
                 <FiLock className={styles.iconeInput} />
