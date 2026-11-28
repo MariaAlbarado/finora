@@ -6,116 +6,118 @@ import { Link } from "react-router-dom";
 
 function Cadastro() {
   return (
-    <main className={styles.containerPrincipal}>
-      <section className={styles.ladoEsquerdo}>
-        <h1>Transforme sua vida financeira</h1>
+    <div className={styles.pagina}>
+      <main className={styles.containerPrincipal}>
+        <section className={styles.ladoEsquerdo}>
+          <h1>Transforme sua vida financeira</h1>
 
-        <p>
-          Crie sua conta e tenha o controle dos seus gastos, receitas e
-          objetivos financeiros.
-        </p>
+          <p>
+            Crie sua conta e tenha o controle dos seus gastos, receitas e
+            objetivos financeiros.
+          </p>
 
-        <img
-          src={financas}
-          alt="Ilustração de controle financeiro"
-          className={styles.imagem}
-        />
-      </section>
+          <img
+            src={financas}
+            alt="Ilustração de controle financeiro"
+            className={styles.imagem}
+          />
+        </section>
 
-      <section className={styles.ladoDireito}>
-        <div className={styles.logo}>
-          <FaChartSimple className={styles.iconeLogo} />
+        <section className={styles.ladoDireito}>
+          <div className={styles.logo}>
+            <FaChartSimple className={styles.iconeLogo} />
 
-          <div>
-            <h2>AlbarFin</h2>
-            <p>Controle Financeiro</p>
-          </div>
-        </div>
-
-        <h1>Crie sua conta</h1>
-
-        <form
-          className={styles.formulario}
-          onSubmit={(event) => event.preventDefault()}
-        >
-          <div className={styles.campo}>
-            <label htmlFor="nome">Nome completo</label>
-
-            <div className={styles.inputContainer}>
-              <FiUser className={styles.iconeInput} />
-
-              <input
-                id="nome"
-                type="text"
-                placeholder="Digite seu nome"
-                autoComplete="name"
-                required
-              />
+            <div>
+              <h2>AlbarFin</h2>
+              <p>Controle Financeiro</p>
             </div>
           </div>
 
-          <div className={styles.campo}>
-            <label htmlFor="email">E-mail</label>
+          <h1>Crie sua conta</h1>
 
-            <div className={styles.inputContainer}>
-              <FiMail className={styles.iconeInput} />
+          <form
+            className={styles.formulario}
+            onSubmit={(event) => event.preventDefault()}
+          >
+            <div className={styles.campo}>
+              <label htmlFor="nome">Nome completo</label>
 
-              <input
-                id="email"
-                type="email"
-                placeholder="Digite seu e-mail"
-                autoComplete="email"
-                required
-              />
+              <div className={styles.inputContainer}>
+                <FiUser className={styles.iconeInput} />
+
+                <input
+                  id="nome"
+                  type="text"
+                  placeholder="Digite seu nome"
+                  autoComplete="name"
+                  required
+                />
+              </div>
             </div>
+
+            <div className={styles.campo}>
+              <label htmlFor="email">E-mail</label>
+
+              <div className={styles.inputContainer}>
+                <FiMail className={styles.iconeInput} />
+
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="Digite seu e-mail"
+                  autoComplete="email"
+                  required
+                />
+              </div>
+            </div>
+
+            <div className={styles.campo}>
+              <label htmlFor="senha">Senha</label>
+
+              <div className={styles.inputContainer}>
+                <FiLock className={styles.iconeInput} />
+
+                <input
+                  id="senha"
+                  type="password"
+                  placeholder="Crie sua senha"
+                  autoComplete="new-password"
+                  required
+                />
+              </div>
+            </div>
+
+            <div className={styles.campo}>
+              <label htmlFor="confirmarSenha">Confirmar senha</label>
+
+              <div className={styles.inputContainer}>
+                <FiLock className={styles.iconeInput} />
+
+                <input
+                  id="confirmarSenha"
+                  type="password"
+                  placeholder="Confirme sua senha"
+                  autoComplete="new-password"
+                  required
+                />
+              </div>
+            </div>
+
+            <button type="submit" className={styles.botaoCadastro}>
+              Criar conta
+            </button>
+          </form>
+
+          <div className={styles.divisor}>
+            <span>Já possui uma conta?</span>
           </div>
 
-          <div className={styles.campo}>
-            <label htmlFor="senha">Senha</label>
-
-            <div className={styles.inputContainer}>
-              <FiLock className={styles.iconeInput} />
-
-              <input
-                id="senha"
-                type="password"
-                placeholder="Crie sua senha"
-                autoComplete="new-password"
-                required
-              />
-            </div>
-          </div>
-
-          <div className={styles.campo}>
-            <label htmlFor="confirmarSenha">Confirmar senha</label>
-
-            <div className={styles.inputContainer}>
-              <FiLock className={styles.iconeInput} />
-
-              <input
-                id="confirmarSenha"
-                type="password"
-                placeholder="Confirme sua senha"
-                autoComplete="new-password"
-                required
-              />
-            </div>
-          </div>
-
-          <button type="submit" className={styles.botaoCadastro}>
-            Criar conta
-          </button>
-        </form>
-
-        <div className={styles.divisor}>
-          <span>Já possui uma conta?</span>
-        </div>
-
-        <Link to="/" className={styles.linkLogin}>
-          Entrar
-        </Link>
-      </section>
-    </main>
+          <Link to="/" className={styles.linkLogin}>
+            Entrar
+          </Link>
+        </section>
+      </main>
+    </div>
   );
 }
 

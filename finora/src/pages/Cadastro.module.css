@@ -1,3 +1,12 @@
+.pagina {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #d9c5f2, #f5effc);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .containerPrincipal {
   width: 90%;
   min-height: 550px;
@@ -18,6 +27,37 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.ladoEsquerdo::before {
+  content: "";
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  background-color: #cbb1ef;
+  border-radius: 50%;
+  top: -115px;
+  right: -60px;
+}
+
+.ladoEsquerdo::after {
+  content: "";
+  position: absolute;
+  width: 210px;
+  height: 210px;
+  background-color: #cbb1ef;
+  border-radius: 50%;
+  bottom: -105px;
+  left: -70px;
+}
+
+.ladoEsquerdo h1,
+.ladoEsquerdo p,
+.imagem {
+  position: relative;
+  z-index: 1;
 }
 
 .ladoEsquerdo h1 {
@@ -64,7 +104,7 @@
   width: 28px;
   height: 28px;
   color: #ffffff;
-  background-color: #6935a8;
+  background: linear-gradient(135deg, #864bc7, #592c99);
   padding: 14px;
   border-radius: 15px;
   box-sizing: content-box;
@@ -136,7 +176,7 @@
 .botaoCadastro {
   width: 100%;
   height: 48px;
-  background-color: #6935a8;
+  background: linear-gradient(135deg, #864bc7, #592c99);
   color: #ffffff;
   border: none;
   border-radius: 10px;
@@ -148,7 +188,7 @@
 }
 
 .botaoCadastro:hover {
-  background-color: #54268e;
+  background: linear-gradient(135deg, #7540b2, #49217f);
 }
 
 .divisor {
